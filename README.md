@@ -92,4 +92,10 @@ I quote from [the MDN docs for SharedArrayBuffer](https://developer.mozilla.org/
 
 > To check if cross origin isolation has been successful, you can test against the crossOriginIsolated property available to window and worker contexts
 
+## Building
+To build a copy for local use, I recommend creating a virtual environment and then using `pip install .` in that virtual environment.
+To upload to pypi, we must build the package for a `manylinux` ABI to insure that the binaries will be compatible with most systems.
+The [manylinux](https://github.com/pypa/manylinux) repository provides docker images with the appropriate old versions of CentOS for us to use to build these. To build, run `sudo ./docker_build_wheels.sh`. **Warning:** This will download a ~300mb docker image the first time you do it. Note that you will need to have docker installed for this to work.
+The resulting wheels will end up in the `dist` directory and will be suitable for upload to pypi.
+
 ## [0.1.0] (2020-07-25)
