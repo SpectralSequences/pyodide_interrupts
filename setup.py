@@ -5,13 +5,13 @@ with open("README.md", "r") as fh:
 
 setup(
     name="pyodide-interrupts",
-    version="0.1.0",
+    version="0.1.1",
     author="Hood Chatham",
     author_email="roberthoodchatham@gmail.com",
     description="Interrupt handling for pyodide.",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/pypa/sampleproject",
+    url="https://github.com/SpectralSequences/pyodide_interrupts/",
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
